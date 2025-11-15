@@ -1,0 +1,15 @@
+{
+"name": "eleventy-cv-portfolio-starter",
+"version": "1.0.0",
+"private": true,
+"description": "Minimal 11ty starter for CV now and portfolio later.",
+"scripts": {
+"dev": "npx @11ty/eleventy --serve --quiet",
+"build": "npx @11ty/eleventy",
+"clean": "rm -rf _site",
+"preview": "npx http-server _site -p 8080"
+},
+"devDependencies": {
+"@11ty/eleventy": "^3.0.0"
+}
+}

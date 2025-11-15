@@ -1,0 +1,12 @@
+<header class="site-header">
+<div class="container flex between center">
+<a class="brand" href="/">{{ site.title }}</a>
+<nav class="nav">
+<ul>
+{% for item in site.nav %}
+<li><a href="{{ item.href }}" {% if page.url == item.href %}aria-current="page"{% endif %}>{{ item.label }}</a></li>
+{% endfor %}
+</ul>
+</nav>
+</div>
+</header>

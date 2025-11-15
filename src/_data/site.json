@@ -1,0 +1,16 @@
+{
+"title": "Sean Powers · CV & Portfolio",
+"description": "Computer Software Specialist – geospatial, remote sensing, and applied research.",
+"url": "https://example.com",
+"author": {
+"name": "Sean Powers",
+"email": "hello@example.com"
+},
+"nav": [
+{ "href": "/", "label": "Home" },
+{ "href": "/cv/", "label": "CV" },
+{ "href": "/projects/", "label": "Projects" },
+{ "href": "/about/", "label": "About" },
+{ "href": "/contact/", "label": "Contact" }
+]
+}
