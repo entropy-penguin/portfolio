@@ -16,6 +16,7 @@ eleventyConfig.addShortcode("year", () => new Date().getFullYear());
 // Base settings. Use pathPrefix so absolute asset links work on GitHub Project Pages
 // Set ELEVENTY_PATH_PREFIX to "/<REPO_NAME>/" for a project site.
 const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
+return { /* … */, pathPrefix };
 
 
 return {
