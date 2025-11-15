@@ -4,6 +4,17 @@ eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 eleventyConfig.addWatchTarget("src/assets/css/styles.css");
 
 
+const { DateTime } = require("luxon");
+
+eleventyConfig.addNunjucksFilter("date", (input, format = "yyyy") => {
+  const d = input === "now" || !input ? new Date() : new Date(input);
+  return DateTime.fromJSDate(d).toFormat(format);
+});
+
+eleventyConfig.addShortcode("year", () => new Date().getFullYear());
+
+
+
 // Base settings
 return {
 dir: {
