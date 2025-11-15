@@ -4,5 +4,5 @@ title: About
 ---
 
 # About
+Your page text here.
 
-Coming soon....
