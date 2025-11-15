@@ -35,7 +35,7 @@ jobs:
         run: npm run build
         env:
           # Auto-detect if it's a root site (username.github.io) or project site (/reponame/)
-          ELEVENTY_PATH_PREFIX: "/${{ github.event.repository.name }}/"
+          ELEVENTY_PATH_PREFIX: "/portfolio/" 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
